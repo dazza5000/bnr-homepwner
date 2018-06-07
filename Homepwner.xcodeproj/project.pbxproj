@@ -8,12 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		E8D9859F20C97AD400A9A300 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8D9859E20C97AD400A9A300 /* AppDelegate.swift */; };
-		E8D985A120C97AD400A9A300 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8D985A020C97AD400A9A300 /* ViewController.swift */; };
 		E8D985A420C97AD400A9A300 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E8D985A220C97AD400A9A300 /* Main.storyboard */; };
 		E8D985A620C97AD800A9A300 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E8D985A520C97AD800A9A300 /* Assets.xcassets */; };
 		E8D985A920C97AD800A9A300 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E8D985A720C97AD800A9A300 /* LaunchScreen.storyboard */; };
 		E8D985B420C97AD900A9A300 /* HomepwnerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8D985B320C97AD900A9A300 /* HomepwnerTests.swift */; };
 		E8D985BF20C97AD900A9A300 /* HomepwnerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8D985BE20C97AD900A9A300 /* HomepwnerUITests.swift */; };
+		E8D985CD20C9805A00A9A300 /* ItemsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8D985CC20C9805A00A9A300 /* ItemsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +36,6 @@
 /* Begin PBXFileReference section */
 		E8D9859B20C97AD400A9A300 /* Homepwner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Homepwner.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E8D9859E20C97AD400A9A300 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		E8D985A020C97AD400A9A300 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		E8D985A320C97AD400A9A300 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E8D985A520C97AD800A9A300 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E8D985A820C97AD800A9A300 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +46,7 @@
 		E8D985BA20C97AD900A9A300 /* HomepwnerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HomepwnerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E8D985BE20C97AD900A9A300 /* HomepwnerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomepwnerUITests.swift; sourceTree = "<group>"; };
 		E8D985C020C97AD900A9A300 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E8D985CC20C9805A00A9A300 /* ItemsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,11 +98,11 @@
 			isa = PBXGroup;
 			children = (
 				E8D9859E20C97AD400A9A300 /* AppDelegate.swift */,
-				E8D985A020C97AD400A9A300 /* ViewController.swift */,
 				E8D985A220C97AD400A9A300 /* Main.storyboard */,
 				E8D985A520C97AD800A9A300 /* Assets.xcassets */,
 				E8D985A720C97AD800A9A300 /* LaunchScreen.storyboard */,
 				E8D985AA20C97AD900A9A300 /* Info.plist */,
+				E8D985CC20C9805A00A9A300 /* ItemsViewController.swift */,
 			);
 			path = Homepwner;
 			sourceTree = "<group>";
@@ -256,7 +256,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E8D985A120C97AD400A9A300 /* ViewController.swift in Sources */,
+				E8D985CD20C9805A00A9A300 /* ItemsViewController.swift in Sources */,
 				E8D9859F20C97AD400A9A300 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
