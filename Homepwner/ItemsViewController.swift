@@ -81,7 +81,8 @@ class ItemsViewController: UITableViewController {
             })
             
             ac.addAction(deleteAction)
-            
+        
+            present(ac, animated: true, completion: nil)
         }
     }
     
