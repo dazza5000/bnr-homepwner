@@ -45,15 +45,15 @@ class ItemsViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return itemStore.allItems.count
     }
-
+    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "UITableViewCell", for: indexPath)
-
+        
         let item = itemStore.allItems[indexPath.row]
-
+        
         cell.textLabel?.text = item.name
         cell.detailTextLabel?.text = "$\(item.valueInDollars)"
-
+        
         return cell
     }
     
@@ -62,8 +62,26 @@ class ItemsViewController: UITableViewController {
                             forRowAt indexPath: IndexPath) {
         if  editingStyle == .delete {
             let item = itemStore.allItems[indexPath.row]
-            itemStore.removeItem(item)
-            tableView.deleteRows(at: [indexPath], with: .automatic)
+            
+            let title = "Delete \(item.name)?"
+            let message =  "Are you sure you want to delte this item?"
+            
+            let ac = UIAlertController(title: title,
+                                       message: message,
+                                       preferredStyle: .actionSheet)
+            
+            let cancelAction = UIAlertAction(title: "Cancel", style: .cancel, handler: nil)
+            ac.addAction(cancelAction)
+            
+            let deleteAction = UIAlertAction(title: "Delete", style: .destructive,
+                                             handler: { (action) -> Void in
+                                                
+                                                self.itemStore.removeItem(item)
+                                                self.tableView.deleteRows(at: [indexPath], with: .automatic)
+            })
+            
+            ac.addAction(deleteAction)
+            
         }
     }
     
