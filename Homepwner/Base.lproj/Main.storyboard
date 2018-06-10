@@ -11,46 +11,17 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Items View Controller-->
+        <!--Homepwner-->
         <scene sceneID="Qhf-2E-ewc">
             <objects>
-                <tableViewController id="TZC-he-9GB" customClass="ItemsViewController" customModule="Homepwner" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController title="Homepwner" id="TZC-he-9GB" customClass="ItemsViewController" customModule="Homepwner" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="mTr-KC-QpO">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <view key="tableHeaderView" contentMode="scaleToFill" id="CpA-sI-z4o">
-                            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            <subviews>
-                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bu9-xP-kGb">
-                                    <rect key="frame" x="191.5" y="7" width="175.5" height="30"/>
-                                    <state key="normal" title="Add"/>
-                                    <connections>
-                                        <action selector="addNewItem:" destination="TZC-he-9GB" eventType="touchUpInside" id="TWN-SJ-5eH"/>
-                                    </connections>
-                                </button>
-                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U24-RY-eij">
-                                    <rect key="frame" x="8" y="7" width="175.5" height="30"/>
-                                    <state key="normal" title="Edit"/>
-                                    <connections>
-                                        <action selector="toggleEditingMode:" destination="TZC-he-9GB" eventType="touchUpInside" id="Nnb-bH-cnn"/>
-                                    </connections>
-                                </button>
-                            </subviews>
-                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                            <constraints>
-                                <constraint firstItem="Bu9-xP-kGb" firstAttribute="width" secondItem="U24-RY-eij" secondAttribute="width" id="06g-99-P0f"/>
-                                <constraint firstItem="U24-RY-eij" firstAttribute="leading" secondItem="CpA-sI-z4o" secondAttribute="leading" constant="8" id="8qg-YF-lUy"/>
-                                <constraint firstAttribute="trailing" secondItem="Bu9-xP-kGb" secondAttribute="trailing" constant="8" id="Ce1-V9-0yk"/>
-                                <constraint firstItem="U24-RY-eij" firstAttribute="centerY" secondItem="CpA-sI-z4o" secondAttribute="centerY" id="UsW-AM-Ffy"/>
-                                <constraint firstItem="Bu9-xP-kGb" firstAttribute="centerY" secondItem="CpA-sI-z4o" secondAttribute="centerY" id="m6Y-24-haW"/>
-                                <constraint firstItem="Bu9-xP-kGb" firstAttribute="leading" secondItem="U24-RY-eij" secondAttribute="trailing" constant="8" id="yGl-hn-CBm"/>
-                            </constraints>
-                        </view>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ItemCell" rowHeight="65" id="Log-ri-vGm" customClass="ItemCell" customModule="Homepwner">
-                                <rect key="frame" x="0.0" y="72" width="375" height="65"/>
+                                <rect key="frame" x="0.0" y="28" width="375" height="65"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Log-ri-vGm" id="eeY-EJ-Ffz">
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="64.5"/>
@@ -98,7 +69,13 @@
                             <outlet property="delegate" destination="TZC-he-9GB" id="Cws-ED-h9t"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="5F4-tf-AiZ"/>
+                    <navigationItem key="navigationItem" title="Homepwner" id="5F4-tf-AiZ">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="5FK-Rh-l34">
+                            <connections>
+                                <action selector="addNewItem:" destination="TZC-he-9GB" id="7T1-Vy-O9Z"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5DR-YC-RE5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -133,6 +110,9 @@
                                                 <nil key="textColor"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
+                                                <connections>
+                                                    <outlet property="delegate" destination="Mju-48-KFf" id="uyH-LD-Sov"/>
+                                                </connections>
                                             </textField>
                                         </subviews>
                                     </stackView>
@@ -150,6 +130,9 @@
                                                 <nil key="textColor"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
+                                                <connections>
+                                                    <outlet property="delegate" destination="Mju-48-KFf" id="4TL-i0-29d"/>
+                                                </connections>
                                             </textField>
                                         </subviews>
                                     </stackView>
@@ -167,6 +150,9 @@
                                                 <nil key="textColor"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
+                                                <connections>
+                                                    <outlet property="delegate" destination="Mju-48-KFf" id="eU3-hJ-whm"/>
+                                                </connections>
                                             </textField>
                                         </subviews>
                                     </stackView>
@@ -189,6 +175,7 @@
                             </stackView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <gestureRecognizers/>
                         <constraints>
                             <constraint firstItem="cqf-P5-euC" firstAttribute="top" secondItem="TtW-bD-5CH" secondAttribute="bottom" constant="8" id="ICU-k6-xPi"/>
                             <constraint firstItem="cqf-P5-euC" firstAttribute="leading" secondItem="Qwa-lC-Y9O" secondAttribute="leadingMargin" id="TUw-al-Ou4"/>
@@ -196,6 +183,9 @@
                             <constraint firstItem="ZN3-dt-UjD" firstAttribute="top" secondItem="cqf-P5-euC" secondAttribute="bottom" constant="8" id="ruG-oV-zfG"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="eua-qL-4L7"/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="9Zn-xi-hcr" appends="YES" id="4ef-gi-DIW"/>
+                        </connections>
                     </view>
                     <connections>
                         <outlet property="dateLabel" destination="ybE-U0-beO" id="Efw-RQ-wMY"/>
@@ -205,6 +195,11 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uFf-yd-kEB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="9Zn-xi-hcr">
+                    <connections>
+                        <action selector="backgroundTapped:" destination="Mju-48-KFf" id="l9b-OP-cb9"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="1808.8" y="100.29985007496252"/>
         </scene>
