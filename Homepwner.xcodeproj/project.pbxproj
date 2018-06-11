@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		E81B336E20CC919400F5FE3C /* ItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E81B336D20CC919400F5FE3C /* ItemCell.swift */; };
+		E85AF3F220CE0B400047373B /* ImageStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = E85AF3F120CE0B400047373B /* ImageStore.swift */; };
 		E87046C420CCDE0E00E15B9F /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E87046C320CCDE0E00E15B9F /* DetailViewController.swift */; };
 		E8D9859F20C97AD400A9A300 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8D9859E20C97AD400A9A300 /* AppDelegate.swift */; };
 		E8D985A420C97AD400A9A300 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E8D985A220C97AD400A9A300 /* Main.storyboard */; };
@@ -39,6 +40,7 @@
 
 /* Begin PBXFileReference section */
 		E81B336D20CC919400F5FE3C /* ItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemCell.swift; sourceTree = "<group>"; };
+		E85AF3F120CE0B400047373B /* ImageStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageStore.swift; sourceTree = "<group>"; };
 		E87046C320CCDE0E00E15B9F /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		E8D9859B20C97AD400A9A300 /* Homepwner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Homepwner.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E8D9859E20C97AD400A9A300 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -115,6 +117,7 @@
 				E8D985D020C98FD900A9A300 /* ItemStore.swift */,
 				E81B336D20CC919400F5FE3C /* ItemCell.swift */,
 				E87046C320CCDE0E00E15B9F /* DetailViewController.swift */,
+				E85AF3F120CE0B400047373B /* ImageStore.swift */,
 			);
 			path = Homepwner;
 			sourceTree = "<group>";
@@ -273,6 +276,7 @@
 				E8D985D120C98FD900A9A300 /* ItemStore.swift in Sources */,
 				E87046C420CCDE0E00E15B9F /* DetailViewController.swift in Sources */,
 				E8D9859F20C97AD400A9A300 /* AppDelegate.swift in Sources */,
+				E85AF3F220CE0B400047373B /* ImageStore.swift in Sources */,
 				E81B336E20CC919400F5FE3C /* ItemCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

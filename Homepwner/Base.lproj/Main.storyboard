@@ -184,7 +184,7 @@
                                 <items>
                                     <barButtonItem systemItem="camera" id="24z-q7-wbe">
                                         <connections>
-                                            <action selector="takePicture:" destination="Mju-48-KFf" id="FRN-NR-E4O"/>
+                                            <action selector="takePicture:" destination="Mju-48-KFf" id="Ue4-op-HFD"/>
                                         </connections>
                                     </barButtonItem>
                                 </items>
